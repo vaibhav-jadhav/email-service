@@ -1,1 +1,1 @@
-#API DOCS
+##Allowed HTTPs requests:##
