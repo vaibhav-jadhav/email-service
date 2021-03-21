@@ -1,3 +1,8 @@
+# Problem statement # 
+> This is a service that accepts the necessary information and sends emails. It 
+> provide an abstraction between two different email service providers. If one of the
+> services goes down, service can quickly failover to a different provider without
+> affecting customers.
 
 1) ###### /emailService ######
 
