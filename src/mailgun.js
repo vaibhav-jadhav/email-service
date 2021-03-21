@@ -4,7 +4,7 @@ const DOMAIN = "sandbox573e43e9bf24426f814506fb813581b1.mailgun.org";
     adding API key for sendgrid mail service
 */
 const mailGunMailService = mailgun({
-  apiKey: "96c4049576fedfd9fd0efdab0af72a08-73e57fef-91ff685d",
+  apiKey: process.env.SMAILGUN_API_KEY,
   domain: DOMAIN,
 });
 /*

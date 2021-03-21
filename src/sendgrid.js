@@ -3,7 +3,7 @@ const sendGridMailService = require("@sendgrid/mail");
     adding API key for sendgrid mail service
 */
 sendGridMailService.setApiKey(
-  "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"
+  process.env.SENDGRID_API_KEY
 );
 /*
     this is first middleware that handles email servies.
