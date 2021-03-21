@@ -9,7 +9,6 @@ function sendEmailUsingSendGrid(request, response, next) {
     subject: request.body.subject,
     text: request.body.text,
   };
-
   sendGridMailService
     .send(messageToSend)
     .then(() => {
