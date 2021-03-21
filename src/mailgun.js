@@ -14,10 +14,14 @@ function sendEmailUsingMailGun(request, response, next) {
   };
   mailGunMailService.messages().send(messageToSend, function (error, body) {
     if (error) {
-        
+            next();
     } else {
+        const responseMessage = {
+            message: "Message Sent",
+            serviceUsed: "MailGun",
+          };
+          response.status(200).json(responseMessage);
     }
-    console.log(body);
   });
 }
 module.exports = { sendEmailUsingMailGun };
