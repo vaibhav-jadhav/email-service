@@ -1,1 +1,2 @@
-##Allowed HTTPs requests:##
+Allowed HTTPs requests:
+    1) POST
