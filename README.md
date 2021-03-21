@@ -17,5 +17,5 @@ Request Body attributes :
 # How we have solved it ? #
 > For handling single API request we have diffrent middlewares
 > each middleware responsible to send mail using diffrent Email Provider.
-> if one of the service goes down or unable to send mail then request is passed to next email service provider.
+> if one of the service goes down or unable to send mail then request is passed to next email service provider(we have used sendgrid and mailgun).
 > if NONE of the email service provider is able to send mail we are  in failure stage and we request user to try after sometime.
